@@ -2,6 +2,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
+{{ partial "css.html" . }}
+
 {{- range site.Params.favicons -}}
   <link
     rel="{{- .rel -}}"
@@ -41,27 +43,3 @@
 {{- partial "opengraph.html" . -}}
 {{- partial "schema.html" . -}}
 {{- partial "twitter_cards.html" . -}}
-
-{{- with resources.Get "sass/main.scss" }}
-  {{- $opts := dict
-    "enableSourceMap" (not hugo.IsProduction)
-    "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
-    "targetPath" "assets/css/main.css"
-    "transpiler" "dartsass"
-    "vars" site.Params.styles
-  }}
-  {{- with . | toCSS $opts }}
-    {{- if hugo.IsProduction }}
-      {{- with . | fingerprint }}
-        <link
-          rel="stylesheet"
-          href="{{- .RelPermalink }}"
-          integrity="{{- .Data.Integrity }}"
-          crossorigin="anonymous"
-        />
-      {{- end }}
-    {{- else }}
-      <link rel="stylesheet" href="{{- .RelPermalink }}" />
-    {{- end }}
-  {{- end }}
-{{- end }}

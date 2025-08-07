@@ -1,0 +1,25 @@
+<style>
+  blockquote {
+    margin-block: 1.5rem;
+    padding-inline-start: 1rem;
+    border-inline-start-width: 0.25rem;
+    border-inline-start-color: blue;
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+  }
+  blockquote p:first-of-type::before {
+    content: open-quote;
+  }
+
+  blockquote p:last-of-type::after {
+    content: close-quote;
+  }
+
+  blockquote p:first-of-type::before,
+  blockquote p:last-of-type::after {
+    font-size: 2rem;
+  }
+</style>
+<blockquote>
+  {{ .Text }}
+</blockquote>

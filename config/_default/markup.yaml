@@ -47,7 +47,7 @@ goldmark:
 # TABLE OF CONTENTS
 tableOfContents:
   endLevel: 6                   # Maximum heading level to include in TOC (H6)
-  ordered: false                # Use unordered list for TOC
+  ordered: true                 # Use unordered list for TOC
   startLevel: 2                 # Start TOC from H2 (ignores H1)
 
 # HIGHLIGHT (for code blocks)
