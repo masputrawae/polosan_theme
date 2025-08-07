@@ -1,0 +1,33 @@
+baseURL: 'https://example.org/'
+languageCode: 'id'
+title: 'Gas Poll'
+
+mediaType: 'application/json'
+
+outputFormats:
+  search:
+    mediaType: 'application/json'
+    baseName: 'search'
+    isPlainText: true
+    notAlternative: true
+
+  manifest:
+    mediaType            : 'application/json'
+    baseName             : 'manifest'
+    isPlainText          : true
+    notAlternative       : true
+
+outputs:
+  home:
+    - html                              # Generate HTML for the homepage
+    - rss                               # Generate RSS feed
+    - sitemap                           # Generate sitemap.xml
+    - search                            # Generate search.json for local search
+    - manifest
+
+enableRobotsTXT: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.148.1"

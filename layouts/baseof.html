@@ -1,0 +1,18 @@
+<!doctype html>
+<html
+  lang="{{- site.Language.LanguageCode -}}"
+  dir="{{- or site.Language.LanguageDirection `ltr` -}}"
+>
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <article class="mpw-markdown">
+    <h1>{{ .Title | title }}</h1>
+    {{ partial "search.html" . }}
+    {{ block "main" . }}
+    {{ end }}
+  </article>
+  {{ partial "scripts.html" . }}
+</body>
+</html>

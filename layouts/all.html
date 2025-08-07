@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <details>
+    <summary> Table Of Content </summary>
+    {{ .TableOfContents }}
+  </details>
+
+  <section>
+    {{ .Content | safeHTML }}
+  </section>
+
+  {{ if in (slice "home" "section" "taxonomy" "term") .Kind }}
+    <ul class="multi-column-list">
+      {{ range .Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}

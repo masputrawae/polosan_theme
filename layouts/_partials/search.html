@@ -1,0 +1,18 @@
+<form id="formSearch">
+  <label for="searchInput">Search: </label>
+  <input
+    type="search"
+    name="query"
+    id="searchInput"
+    placeholder="Search Content..."
+    aria-label="Search Content"
+    autocomplete="off"
+    data-search-url="{{ "search.json" | relLangURL }}"
+  />
+</form>
+
+<ul
+  id="results"
+  aria-live="polite"
+  hidden
+></ul>
