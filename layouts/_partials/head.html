@@ -15,6 +15,7 @@
 
 <link rel="manifest" href="{{- "manifest.json" | absURL -}}" />
 <link rel="sitemap" type="application/xml" href="{{- "sitemap.xml" | absURL -}}"/>
+
 {{- $description := "" -}}
 {{- if .Params.description -}}
   {{- $description = .Params.description | plainify | htmlEscape -}}

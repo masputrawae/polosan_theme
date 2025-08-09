@@ -19,6 +19,7 @@
       alt="{{- . }}" title="{{- . }}"
     {{- end -}}
     {{- with $customWidth }}width="{{- . }}px"{{- end -}}
+    style="max-width: 100%; display: block;"
   />
 {{- else }}
   <img
@@ -27,5 +28,6 @@
     {{- with .Title }}
       title="{{- . }}"
     {{- end -}}
+    style="max-width: 100%; display: block;"
   />
 {{- end }}
