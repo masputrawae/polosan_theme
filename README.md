@@ -2,8 +2,10 @@
 
 **_"Fast, minimal, and eco-friendly Hugo theme — with smart JavaScript."_**
 
-[![Low Carbon Website](https://img.shields.io/badge/CO₂-Low%20Carbon-brightgreen?style=flat&logo=leaflet)](https://www.websitecarbon.com)  
-[![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-100%25-brightgreen?logo=lighthouse)](https://web.dev/measure/)
+[![Low Carbon Website](https://img.shields.io/badge/CO₂-Low%20Carbon-brightgreen?style=flat&logo=leaf)](https://www.websitecarbon.com)  
+[![Lighthouse Performance](https://img.shields.io/badge/Lighthouse-100%25-brightgreen?logo=lighthouse)](https://web.dev/measure/)  
+[![Clean Web – 98% cleaner](https://img.shields.io/badge/Clean%20Web-98%25%20cleaner-brightgreen?style=flat&logo=leaf)
+](https://www.websitecarbon.com/website/masputrawae-github-io-polosan_theme/)
 
 ![Low Carbon Theme Screenshot](screenshot-1.png)  
 ![Low Carbon Theme Screenshot](screenshot-2.png)  
