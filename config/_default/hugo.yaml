@@ -1,6 +1,8 @@
-baseURL: 'https://example.org/'
+baseURL: 'https://masputrawae.github.io/polosan_theme/'
 languageCode: 'id'
-title: 'Gas Poll'
+title: 'Polosan Themes'
+enableEmoji: true
+twitter: "@JohnDoe"
 
 mediaType: 'application/json'
 

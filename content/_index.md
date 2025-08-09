@@ -2,9 +2,56 @@
 title = 'Home'
 date = 2023-01-01T08:00:00-07:00
 draft = false
+math = true
 +++
 
+## Article
+
+Qui esse elit ut reprehenderit qui dolor proident. Enim amet nulla nulla magna nostrud aute ex consectetur deserunt nostrud anim qui aliqua sint. Ea irure et exercitation eu labore ex aliqua.
+
+Reprehenderit est minim enim consectetur qui sint consequat tempor amet deserunt enim dolor enim. Et veniam aliquip anim in reprehenderit. Mollit commodo ad aute ex non consequat occaecat aute.
+
+## Lorem Ipsum 
+
+Fugiat non est sunt excepteur quis veniam est non ad minim. Tempor occaecat quis culpa non culpa. Ipsum anim incididunt irure ea mollit sint esse pariatur consequat consectetur duis enim. Labore irure dolor dolor voluptate elit officia ullamco in adipisicing occaecat ullamco sit. Nostrud deserunt reprehenderit et fugiat qui do cupidatat elit tempor cupidatat sunt ut tempor.
+
+## Lorem Ipsum 2
+
+Incididunt dolor in adipisicing nostrud fugiat dolor non mollit elit nostrud duis commodo exercitation proident. Aute deserunt nulla commodo consequat do pariatur laborum consectetur sint. Reprehenderit dolore magna consequat incididunt ut enim enim consectetur. Aliqua ad magna minim labore id. Mollit Lorem duis amet culpa laborum eiusmod sunt sint laborum. Reprehenderit quis sint aute elit labore aliqua.
+
+Nisi occaecat occaecat laborum esse in minim sit velit ex dolor minim enim eiusmod. Occaecat esse veniam cillum dolore occaecat voluptate cillum sunt magna pariatur id. Consequat quis esse non adipisicing nisi exercitation laborum pariatur culpa fugiat amet labore excepteur. Occaecat eiusmod nostrud ut enim.
+
 ---
+
+This is an inline \(a^*=x-b^*\) equation.
+
+These are block equations:
+
+\[a^*=x-b^*\]
+
+\[ a^*=x-b^* \]
+
+\[
+a^*=x-b^*
+\]
+
+These are also block equations:
+
+$$a^*=x-b^*$$
+
+$$ a^*=x-b^* $$
+
+$$
+a^*=x-b^*
+$$
+
+\[
+\begin{aligned}
+KL(\hat{y} || y) &= \sum_{c=1}^{M}\hat{y}_c \log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) + KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+\]
+
 __Advertisement :)__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
@@ -172,7 +219,7 @@ The killer feature of `markdown-it` is very effective support of
 ### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
 
 > Classic markup: :wink: :cry: :laughing: :yum:
->
+> 
 > Shortcuts (emoticons): :-) :-( 8-) ;)
 
 see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
@@ -221,9 +268,6 @@ with lazy continuation.
 Term 2 with *inline markup*
 
 :   Definition 2
-
-        { some code, part of Definition 2 }
-
     Third paragraph of definition 2.
 
 _Compact style:_

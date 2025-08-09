@@ -1,5 +1,2 @@
-{{ $level := .Level }}
-
-<h{{ $level }} id="{{ .Anchor }}">
-{{ .Text }}
-</h{{ $level }}>
+{{- $level := .Level }}
+<h{{- $level }} id="{{- .Anchor }}">{{- .Text }}</h{{- $level }}>

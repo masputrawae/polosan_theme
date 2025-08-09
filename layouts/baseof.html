@@ -4,15 +4,39 @@
   dir="{{- or site.Language.LanguageDirection `ltr` -}}"
 >
 <head>
-  {{ partial "head.html" . }}
+  {{- partial "head.html" . -}}
 </head>
 <body>
-  <article class="mpw-markdown">
-    <h1>{{ .Title | title }}</h1>
-    {{ partial "search.html" . }}
-    {{ block "main" . }}
-    {{ end }}
+  {{- partial "search.html" . -}}
+  <article id="print-area">
+    <h1>{{- .Title | title -}}</h1>
+    {{- block "main" . -}}{{- end -}}
   </article>
-  {{ partial "scripts.html" . }}
+  <hr>
+  <footer style="text-align: center;">
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="masputrawae/masputrawae.github.io"
+      data-repo-id="R_kgDOPTix1Q"
+      data-category="General"
+      data-category-id="DIC_kwDOPTix1c4Ctd3E"
+      data-mapping="title"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="light_high_contrast"
+      data-lang="en"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <p>
+      &copy; {{ site.Title }} · {{ now.Year }} <br />
+      All Rights Reserved.
+    </p>
+  </footer>
+
+  {{- partial "scripts.html" . -}}
 </body>
 </html>

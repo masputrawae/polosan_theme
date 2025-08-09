@@ -1,73 +1,40 @@
-<style>
-  .table-container {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    margin: 1.5rem 0;
-    border-radius: 0.25rem;
-    border: 1px dashed gray;
-    border-bottom: none;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 65ch;
-  }
-
-  th {
-    text-align: start;
-    padding: 1rem 1.5rem;
-    font-weight: 600;
-    color: var(--third-color);
-    border-block-end: 1px dashed gray;
-    white-space: nowrap;
-  }
-
-  td {
-    padding: 1rem 1.5rem;
-    border-block-end: 1px dashed gray;
-    color: var(--color-text-muted);
-    white-space: nowrap;
-  }
-</style>
-
 <div class="table-container">
   <table
-    {{- range $k, $v := .Attributes }}
-      {{- if $v }}
-        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-      {{- end }}
-    {{- end }}
+    {{- range $k, $v := .Attributes -}}
+      {{- if $v -}}
+        {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
+      {{- end -}}
+    {{- end -}}
   >
     <thead>
-      {{- range .THead }}
+      {{- range .THead -}}
         <tr>
-          {{- range . }}
+          {{- range . -}}
             <th
-              {{- with .Alignment }}
-                {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr }}
+              {{- with .Alignment -}}
+                {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr -}}
               {{- end -}}
             >
               {{- .Text -}}
             </th>
-          {{- end }}
+          {{- end -}}
         </tr>
-      {{- end }}
+      {{- end -}}
     </thead>
     <tbody>
-      {{- range .TBody }}
+      {{- range .TBody -}}
         <tr>
-          {{- range . }}
+          {{- range . -}}
             <td
-              {{- with .Alignment }}
-                {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr }}
+              {{- with .Alignment -}}
+                {{- printf " style=%q" (printf "text-align: %s" .) | safeHTMLAttr -}}
               {{- end -}}
             >
               {{- .Text -}}
             </td>
-          {{- end }}
+          {{- end -}}
         </tr>
-      {{- end }}
+      {{- end -}}
     </tbody>
   </table>
 </div>

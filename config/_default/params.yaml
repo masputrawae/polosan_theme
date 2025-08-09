@@ -1,0 +1,39 @@
+# Author name or site owner (used in metadata and footer)
+author: John Doe
+
+#===================
+# FAVICONS
+#===================
+
+# List of favicons to be used in the <head> of your site
+# Save favicon files inside the "static" directory and adjust paths accordingly
+# You can add just one or multiple favicon formats and sizes
+favicons:
+  - rel: icon
+    type: image/x-icon
+    href: assets/favicons/favicon.ico
+
+  - rel: apple-touch-icon
+    type: image/png
+    size: 180x180
+    href: assets/favicons/apple-touch-icon.png
+
+  - rel: icon
+    type: image/png
+    size: 32x32
+    href: assets/favicons/favicon-32x32.png
+
+  - rel: icon
+    type: image/png
+    size: 16x16
+    href: assets/favicons/favicon-16x16.png
+
+  - rel: icon
+    type: image/png
+    size: 192x192
+    href: assets/favicons/android-chrome-192x192.png
+
+  - rel: icon
+    type: image/png
+    size: 512x512
+    href: assets/favicons/android-chrome-512x512.png
